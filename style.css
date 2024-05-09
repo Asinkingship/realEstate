@@ -19,11 +19,44 @@ h3,h2{
     margin-left: 20px;
     font-size: 2.4rem;
 }
+img{
+    max-width: 100%;
+}
+
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /*utilities*/
+.flex-c{
+    display: flex;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bar{
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+}
+.bt{
+    font-weight: bold;
+}
+.btn-see-details{
+    display: inline-block;
+    background-color: rgb(150, 78, 12);
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /*header*/
 header.site-init{
@@ -39,4 +72,29 @@ header.site-init{
 padding-inline: 10px;
 color: white;
 font-size: 1.7rem;
+}
+
+.more-about-item{
+    margin-right: 1rem;
+    padding: 1 rem;;
+}
+.more-about-item p{
+    text-align: justify;
+}
+/*houses and penthouses*/
+.houses-item{
+    margin-right: 1rem;
+    background-color: rgb(179, 172, 172);
+}
+.houses-item a{
+    color: black;
+}
+/*contact*/
+.site-contact{
+    background-color: rgb(218, 129, 14);
+    color: black;
+    height: 20rem;
+}
+.site-contact a{
+    color: black;
 }
