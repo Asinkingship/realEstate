@@ -48,7 +48,7 @@ body{
     font-weight: bold;
 }
 .btn-see-details{
-    display: inline-block;
+    display: block;
     background-color: rgb(150, 78, 12);
     color: white;
     padding: 10px;
@@ -58,6 +58,7 @@ body{
     font-size: 12px;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
 }
 
 /*header*/
@@ -99,4 +100,18 @@ font-size: 1.7rem;
 }
 .site-contact a{
     color: black;
+}
+.form-container{
+background-color: #dedede;
+}
+.form-container fieldset{
+font-size: 1.6rem;
+}
+.form-control input, .form-control select{
+width: 60%;
+padding: 3px;
+}
+.form-control label{
+display: inline-block;
+width: 150px;
 }
