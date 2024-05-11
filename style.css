@@ -11,13 +11,28 @@ p{
     margin-left: 20px;
     font-size: 1.6rem;
 }
+.about-us-disc{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 h1{
     font-size: 3rem;
+    text-align: center;
 }
 h3,h2{
     padding-top: 10px;
     margin-left: 20px;
     font-size: 2.4rem;
+}
+.about-us-hd{
+    padding: 2rem;
+}
+.blog-hd{
+    padding: 2rem;
+}
+.blog-disc{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 img{
     max-width: 100%;
@@ -33,10 +48,30 @@ body{
 .flex-c{
     display: flex;
 }
+.flex-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-icon p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .container{
+    width: 80%;
+
+    text-align: center;
+}
+.container-blog-img{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.container-about-us{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .bar{
     display: flex;
@@ -44,6 +79,21 @@ body{
     height: 10rem;
     align-items: center;
 }
+@media(max-width:768px){
+    .bar{
+        flex-direction: column;
+    }
+    .container{
+        width: 95%;
+    }
+    .flex-c{
+        flex-direction: column;
+    }
+    h3{
+        text-align: center;
+    }
+}
+
 .bt{
     font-weight: bold;
 }
@@ -56,8 +106,6 @@ body{
     margin-top: 10px;
     margin-bottom: 30px;
     font-size: 12px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
 }
 
@@ -84,6 +132,14 @@ font-size: 1.7rem;
 .more-about-item p{
     text-align: justify;
 }
+@media(max-width:768px){
+    .more-about-item img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 /*houses and penthouses*/
 .houses-item{
     margin-right: 1rem;
@@ -103,15 +159,33 @@ font-size: 1.7rem;
 }
 .form-container{
 background-color: #dedede;
+padding: 1rem;
+border-radius: 1rem;
+margin-top: 1rem;
 }
 .form-container fieldset{
 font-size: 1.6rem;
+margin: 1rem;
+border: 1px solid grey;
+border-radius: 1rem;
 }
-.form-control input, .form-control select{
+.form-control input, .form-control select, .form-control textarea{
 width: 60%;
 padding: 3px;
 }
 .form-control label{
 display: inline-block;
 width: 150px;
+font-size: 1.4rem;
+}
+.footer{
+    height: 200px;
+    background-color: #686363;
+    margin-top: 5rem;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
 }
